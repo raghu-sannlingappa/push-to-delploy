@@ -37,7 +37,7 @@ public class SignGuestbookServlet extends HttpServlet {
   public void doPost(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
     UserService userService = UserServiceFactory.getUserService();
-    User user = userService.getCurrentUser();
+    User user = userService.getCurrentUser(); 
 
     String guestbookName = req.getParameter("guestbookName");
     Key guestbookKey = KeyFactory.createKey("Guestbook", guestbookName);
