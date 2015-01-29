@@ -5,7 +5,7 @@
 
 <body>
 
-<%=String.value("Hello")%>
+<%=String.valueof("Hello")%>
 <form action="/sign" method="post">
     <div><textarea name="content" rows="3" cols="60"></textarea></div>
     <div><input type="submit" value="Post Greeting"/></div>
